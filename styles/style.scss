@@ -31,7 +31,7 @@ nav {
   border-color: #cccccc;
   border-style: solid;
   border-width: 0px 0px 1px 0px;
-  position: static;
+  //position: absolute;
 }
 
 body {
@@ -46,15 +46,21 @@ body {
 }
 
 #title {
-  //   text-shadow: 0.75px 0.7px 0.5px rgb(0, 0, 0);
   color: #ffffff;
-  font-size: 1.25em;
+  font-size: 2em;
   letter-spacing: 1px;
   background-color: #4aaaa5;
   padding: 20px 20px 20px 20px;
   margin: 20px 0px 0px 0px;
-  @media screen and (max-width: 420px) {
-    font-size: 0.8em;
+  box-shadow: 0px 1px 1px #4aaaa5;
+  @media screen and (max-width: 980px) {
+    font-size: 1.75em;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 1.5em;
+  }
+  @media screen and (max-width: 640px) {
+    font-size: 1.25em;
   }
 }
 
@@ -64,6 +70,7 @@ body {
 }
 
 .nav-links {
+  font-size: 1.25em;
   z-index: 4;
   display: flex;
   justify-content: space-around;
@@ -71,11 +78,18 @@ body {
   float: right;
   list-style: none;
   background-color: #ffffff;
-  padding-left: 20px;
-  margin: 55px 0px 0px 0px;
+  //padding-left: 20px;
+  margin: 15px 0px 0px 0px;
   border-radius: 25px 0px 0px 25px;
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 980px) {
     box-shadow: 0.1px 2px 5px rgb(0, 0, 0);
+    font-size: 1em;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 0.8em;
+  }
+  @media screen and (max-width: 640px) {
+    font-size: 0.7em;
   }
 }
 
@@ -90,11 +104,7 @@ body {
   letter-spacing: 3px;
   padding: 5px 20px;
   justify-content: space-around;
-  font-size: 1rem;
   font-weight: bold;
-  @media screen and (max-width: 420px) {
-    font-size: 0.9em;
-  }
 }
 
 // .nav-links li a {
@@ -102,7 +112,8 @@ body {
 // }
 
 .nav-links li a:hover {
-  -webkit-text-stroke-width: 0.5px;
+  transition: all 0.3s ease-in;
+  text-shadow: 1.8px 1.8px 2.75px rgba(0, 0, 0, 0.2);
 }
 
 .burger {
@@ -110,7 +121,6 @@ body {
   float: right;
   margin-right: 5px;
   margin-top: 5px;
-  background-color: rgba(0, 0, 0, 0);
 }
 
 .burger div {
@@ -119,12 +129,13 @@ body {
   background-color: #4aaaa5;
   margin: 5px;
   transition: all 0.3s ease;
-  // box-shadow: 0.1px 0.1px 0.5px rgb(0, 0, 0);
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 980px) {
   body {
-    overflow-x: hidden;
+    //position: relative;
+    overflow: hidden;
+    background: #ffffff;
   }
   .nav-links li a {
     font-size: 1.25em;
@@ -142,14 +153,14 @@ body {
     transition: transform 0.4s ease-in;
   }
   .nav-links li {
-    //opacity: 0;
   }
+
   .burger {
     display: block;
     cursor: pointer;
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 640px) {
   .nav-links {
     width: 55%;
     font-size: 0.9em;
@@ -182,13 +193,22 @@ body {
 }
 
 .main {
-  display: -webkit-flex; /* Safari */
-  -webkit-justify-content: center; /* Safari 6.1+ */
   display: flex;
   justify-content: center;
   min-height: calc(
-    100vh - 95px - 61.59px
-  ); //height = header - footer tutorial: https://youtu.be/US_3XvufMLU
+    100vh - 80px - 90px
+  ); //height = header - footer | tutorial: https://youtu.be/US_3XvufMLU
+  @media screen and (max-width: 980px) {
+    min-height: calc(100vh - 95px - 61.59px);
+  }
+  @media screen and (max-width: 768px) {
+    min-height: calc(100vh - 82px - 102px);
+    margin: 10px 10px 10px 10px;
+  }
+  @media screen and (max-width: 640px) {
+    min-height: calc(100vh - 77px - 70px);
+    margin: 10px 10px 10px 10px;
+  }
 }
 
 .body-content {
@@ -202,9 +222,6 @@ body {
   border-color: #dddddd;
   background-color: #ffffff;
   box-shadow: 1px 2px 9px rgba(0, 0, 0, 0.836);
-  @media screen and (max-width: 800px) {
-    width: 90%;
-  }
 }
 
 #about-title {
@@ -236,7 +253,7 @@ body {
   padding-top: 1%;
   padding-bottom: 1%;
   margin: 30% 0% 0% 5%;
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 980px) {
     margin: 28% 0% 0% 5%;
     font-size: 1em;
   }
@@ -267,7 +284,7 @@ body {
 
 .image3 {
   margin: 5% 5% 5% 5%;
-  float: right;
+  float: left;
   height: 40%;
   width: 40%;
 }
@@ -282,7 +299,7 @@ body {
   padding-top: 1%;
   padding-bottom: 1%;
   margin: 67% 0% 0% 5%;
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 980px) {
     margin: 65% 0% 0% 5%;
     font-size: 1em;
   }
@@ -305,7 +322,7 @@ body {
   padding-top: 1%;
   padding-bottom: 1%;
   margin: 67% 0% 0% 55%;
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 980px) {
     margin: 65% 0% 0% 55%;
     font-size: 1em;
   }
@@ -322,38 +339,58 @@ body {
 
 #profile-photo {
   float: left;
-  height: 15%;
-  width: 15%;
+  height: 25%;
+  width: 25%;
   margin: 15px 30px 0px 30px;
-  @media screen and (max-width: 800px) {
-    height: 25%;
-    width: 25%;
+  @media screen and (max-width: 980px) {
+    height: 40%;
+    width: 40%;
   }
 }
 
 #about {
   background-color: #ffffff;
   padding: 10px 20px 10px 20px;
-  line-height: 40px;
-  font-size: 1.2em;
+  line-height: 45px;
+  font-size: 1.3em;
   color: #777777;
+  @media screen and (max-width: 980px) {
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 1.2em;
+    line-height: 40px;
+  }
+  @media screen and (max-width: 640px) {
+    font-size: 1em;
+    line-height: 35px;
+  }
 }
 
 .contact-form {
-  margin: 15px 30px 15px 30px;
+  margin: 15px 30px 0px 30px;
   color: #777777;
 }
 
 #name {
   width: 100%;
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: #777777;
 }
 
 #email {
   width: 100%;
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: #777777;
 }
 
 #comment {
+  //margin: 10px;
   width: 100%;
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: #777777;
 }
 
 #submit {
@@ -361,6 +398,8 @@ body {
   padding: 5px 10px 5px 10px;
   border-style: none;
   color: #ffffff;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
 }
 
 footer {
