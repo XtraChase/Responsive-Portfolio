@@ -15,13 +15,12 @@ html {
 }
 
 header {
-  position: relative;
+  position: static;
   font-family: "Georgia", Times, Times New Roman, serif;
   box-shadow: 0.1px 2px 5px rgba(0, 0, 0, 0.603);
 }
 
 nav {
-  //   float: right;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -31,18 +30,15 @@ nav {
   border-color: #cccccc;
   border-style: solid;
   border-width: 0px 0px 1px 0px;
-  //position: absolute;
 }
 
 body {
-  width: 100%;
   font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
   background-image: url("../images/papyrus.png");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
 }
 
 #title {
@@ -134,7 +130,7 @@ body {
 @media screen and (max-width: 980px) {
   body {
     //position: relative;
-    overflow: hidden;
+    overflow-x: hidden;
     background: #ffffff;
   }
   .nav-links li a {
@@ -335,6 +331,7 @@ body {
   border-width: 1px;
   border-color: #dddddd;
   text-align: center;
+  background-color: #dddddd;
 }
 
 #profile-photo {
