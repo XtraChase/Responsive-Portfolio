@@ -253,7 +253,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-height: calc( 100vh - 80px - 90px);
+  min-height: calc( 100vh - 93px - 64px);
 }
 
 @media screen and (max-width: 980px) {
