@@ -302,107 +302,98 @@ body {
   font-size: 2em;
 }
 
-.image1 {
-  margin: 5% 5% 0% 5%;
-  float: left;
-  height: 40%;
-  width: 40%;
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  text-align: center;
+  row-gap: 1em;
+  margin: 3% 0% 3% 0%;
+}
+
+@media screen and (max-width: 420px) {
+  .wrapper {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    margin: 3% 0% 3% 0%;
+  }
+}
+
+.images {
+  width: 90%;
+}
+
+.image-text {
+  position: absolute;
+  font-size: 1.5em;
+  color: #ffffff;
+  background-color: #4aaaa5d2;
+  width: 45%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+@media screen and (max-width: 980px) {
+  .image-text {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .image-text {
+    width: 90%;
+    font-size: 1.5em;
+  }
 }
 
 .image1-text {
-  text-align: center;
-  position: absolute;
-  font-size: 1.5em;
-  color: #ffffff;
-  background-color: #4aaaa5d2;
-  width: 40%;
-  padding-top: 1%;
-  padding-bottom: 1%;
-  margin: 30% 0% 0% 5%;
+  margin: 25% 0% 0% 2.5%;
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 420px) {
   .image1-text {
-    margin: 28% 0% 0% 5%;
-    font-size: 1em;
+    margin: 55% 0% 0% 5%;
   }
-}
-
-.image2 {
-  margin: 5% 5% 0% 5%;
-  float: right;
-  height: 40%;
-  width: 40%;
 }
 
 .image2-text {
-  text-align: center;
-  position: absolute;
-  font-size: 1.5em;
-  color: #ffffff;
-  background-color: #4aaaa5d2;
-  width: 40%;
-  padding-top: 1%;
-  padding-bottom: 1%;
-  margin: 30% 0% 0% 55%;
+  margin: 25% 0% 0% 52.5%;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 420px) {
   .image2-text {
-    margin: 28% 0% 0% 55%;
-    font-size: 1em;
+    margin: 135% 0% 0% 5%;
   }
-}
-
-.image3 {
-  margin: 5% 5% 5% 5%;
-  float: left;
-  height: 40%;
-  width: 40%;
 }
 
 .image3-text {
-  text-align: center;
-  position: absolute;
-  font-size: 1.5em;
-  color: #ffffff;
-  background-color: #4aaaa5d2;
-  width: 40%;
-  padding-top: 1%;
-  padding-bottom: 1%;
-  margin: 67% 0% 0% 5%;
+  margin: 65% 0% 0% 2.5%;
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 420px) {
   .image3-text {
-    margin: 65% 0% 0% 5%;
-    font-size: 1em;
+    margin: 210% 0% 0% 5%;
   }
 }
 
-.image4 {
-  margin: 5% 5% 5% 5%;
-  float: right;
-  height: 40%;
-  width: 40%;
-}
-
 .image4-text {
-  text-align: center;
-  position: absolute;
-  font-size: 1.5em;
-  color: #ffffff;
-  background-color: #4aaaa5d2;
-  width: 40%;
-  padding-top: 1%;
-  padding-bottom: 1%;
-  margin: 67% 0% 0% 55%;
+  margin: 65% 0% 0% 52.5%;
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 420px) {
   .image4-text {
-    margin: 65% 0% 0% 55%;
-    font-size: 1em;
+    margin: 285% 0% 0% 5%;
+  }
+}
+
+.image5-text {
+  margin: 105% 0% 0% 2.5%;
+}
+
+@media screen and (max-width: 420px) {
+  .image5-text {
+    margin: 365% 0% 0% 5%;
   }
 }
 
