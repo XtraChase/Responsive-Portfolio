@@ -397,6 +397,16 @@ body {
   }
 }
 
+.image6-text {
+  margin: 105% 0% 0% 52.5%;
+}
+
+@media screen and (max-width: 420px) {
+  .image6-text {
+    margin: 365% 0% 0% 5%;
+  }
+}
+
 #line {
   width: 95%;
   margin-left: 2.5%;
