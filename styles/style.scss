@@ -1,17 +1,16 @@
 html {
   height: 100%;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
+.page-container {
+  position: relative;
+  min-height: 100vh;
 }
 
-* {
-  margin: 0px;
-  padding: 0px;
+#content-wrap {
+  padding-bottom: 3rem; /* Footer height */
 }
 
 header {
@@ -45,10 +44,10 @@ body {
   color: #ffffff;
   font-size: 2em;
   letter-spacing: 1px;
-  background-color: #4aaaa5;
+  background-color: rgb(64, 113, 148);
   padding: 20px 20px 20px 20px;
   margin: 20px 0px 0px 0px;
-  box-shadow: 0px 1px 1px #4aaaa5;
+  box-shadow: 0px 1px 1px rgb(64, 113, 148);
   @media screen and (max-width: 980px) {
     font-size: 1.75em;
   }
@@ -122,7 +121,7 @@ body {
 .burger div {
   width: 25px;
   height: 3px;
-  background-color: #4aaaa5;
+  background-color: rgb(64, 113, 148);
   margin: 5px;
   transition: all 0.3s ease;
 }
@@ -191,9 +190,6 @@ body {
 .main {
   display: flex;
   justify-content: center;
-  min-height: calc(
-    100vh - 93px - 64px
-  ); //height = header - footer | tutorial: https://youtu.be/US_3XvufMLU
   @media screen and (max-width: 980px) {
     min-height: calc(100vh - 95px - 61.59px);
   }
@@ -208,7 +204,6 @@ body {
 }
 
 .body-content {
-  z-index: 3;
   width: 960px;
   position: relative;
   margin-top: 2%;
@@ -221,14 +216,14 @@ body {
 }
 
 #about-title {
-  color: #4aaaa5;
-  padding: 15px 0px 15px 30px;
+  color: rgb(64, 113, 148);
+  padding: 15px 0px 5px 30px;
   font-size: 2em;
 }
 
 #portfolio-title {
-  color: #4aaaa5;
-  padding: 15px 0px 15px 30px;
+  color: rgb(64, 113, 148);
+  padding: 15px 0px 5px 30px;
   font-size: 2em;
 }
 
@@ -252,7 +247,10 @@ body {
   position: absolute;
   font-size: 1.5em;
   color: #ffffff;
-  background-color: #4aaaa5d2;
+  background-color: rgb(64, 113, 148);
+  border-style: solid;
+  border-color: rgb(221, 221, 221);
+  border-width: 0.011px;
   width: 45%;
   padding-top: 1%;
   padding-bottom: 1%;
@@ -319,12 +317,12 @@ body {
 
 #profile-photo {
   float: left;
-  height: 25%;
-  width: 25%;
+  height: 20%;
+  width: 20%;
   margin: 15px 30px 0px 30px;
   @media screen and (max-width: 980px) {
-    height: 40%;
-    width: 40%;
+    height: 30%;
+    width: 30%;
   }
 }
 
@@ -374,7 +372,7 @@ body {
 }
 
 #submit {
-  background-color: #4aaaa5;
+  background-color: rgb(64, 113, 148);
   padding: 5px 10px 5px 10px;
   border-style: none;
   color: #ffffff;
@@ -383,23 +381,35 @@ body {
 }
 
 footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 3rem;
   background-color: #666666;
   border-style: solid;
   border-width: 5px 0px 0px 0px;
-  border-color: #4aaaa5;
-  height: 10vh;
-  width: 100%;
-  text-align: center;
+  border-color: rgb(64, 113, 148);
   box-shadow: 1px 0.6px 5px rgb(0, 0, 0);
-  // position: relative;
-  // bottom: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: center;
+}
+
+.linkedin {
+  grid-column-start: 3;
+  text-align: right;
+  margin-right: 20px;
+}
+
+#linkedin-icon {
+  height: 30px;
 }
 
 #copyright {
+  grid-column-start: 2;
+  text-align: center;
   width: 100%;
   color: #ffffff;
-  position: relative;
-  margin-top: 28px;
-  text-align: center;
   font-size: 0.8em;
 }

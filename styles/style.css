@@ -2,18 +2,17 @@ html {
   height: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  overflow-x: hidden;
 }
 
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+.page-container {
+  position: relative;
+  min-height: 100vh;
 }
 
-* {
-  margin: 0px;
-  padding: 0px;
+#content-wrap {
+  padding-bottom: 3rem;
+  /* Footer height */
 }
 
 header {
@@ -53,11 +52,11 @@ body {
   color: #ffffff;
   font-size: 2em;
   letter-spacing: 1px;
-  background-color: #4aaaa5;
+  background-color: #407194;
   padding: 20px 20px 20px 20px;
   margin: 20px 0px 0px 0px;
-  -webkit-box-shadow: 0px 1px 1px #4aaaa5;
-          box-shadow: 0px 1px 1px #4aaaa5;
+  -webkit-box-shadow: 0px 1px 1px #407194;
+          box-shadow: 0px 1px 1px #407194;
 }
 
 @media screen and (max-width: 980px) {
@@ -151,7 +150,7 @@ body {
 .burger div {
   width: 25px;
   height: 3px;
-  background-color: #4aaaa5;
+  background-color: #407194;
   margin: 5px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -253,7 +252,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-height: calc( 100vh - 93px - 64px);
 }
 
 @media screen and (max-width: 980px) {
@@ -277,7 +275,6 @@ body {
 }
 
 .body-content {
-  z-index: 3;
   width: 960px;
   position: relative;
   margin-top: 2%;
@@ -291,14 +288,14 @@ body {
 }
 
 #about-title {
-  color: #4aaaa5;
-  padding: 15px 0px 15px 30px;
+  color: #407194;
+  padding: 15px 0px 5px 30px;
   font-size: 2em;
 }
 
 #portfolio-title {
-  color: #4aaaa5;
-  padding: 15px 0px 15px 30px;
+  color: #407194;
+  padding: 15px 0px 5px 30px;
   font-size: 2em;
 }
 
@@ -328,7 +325,10 @@ body {
   position: absolute;
   font-size: 1.5em;
   color: #ffffff;
-  background-color: #4aaaa5d2;
+  background-color: #407194;
+  border-style: solid;
+  border-color: #dddddd;
+  border-width: 0.011px;
   width: 45%;
   padding-top: 1%;
   padding-bottom: 1%;
@@ -419,15 +419,15 @@ body {
 
 #profile-photo {
   float: left;
-  height: 25%;
-  width: 25%;
+  height: 20%;
+  width: 20%;
   margin: 15px 30px 0px 30px;
 }
 
 @media screen and (max-width: 980px) {
   #profile-photo {
-    height: 40%;
-    width: 40%;
+    height: 30%;
+    width: 30%;
   }
 }
 
@@ -480,7 +480,7 @@ body {
 }
 
 #submit {
-  background-color: #4aaaa5;
+  background-color: #407194;
   padding: 5px 10px 5px 10px;
   border-style: none;
   color: #ffffff;
@@ -490,23 +490,45 @@ body {
 }
 
 footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 3rem;
   background-color: #666666;
   border-style: solid;
   border-width: 5px 0px 0px 0px;
-  border-color: #4aaaa5;
-  height: 10vh;
-  width: 100%;
-  text-align: center;
+  border-color: #407194;
   -webkit-box-shadow: 1px 0.6px 5px black;
           box-shadow: 1px 0.6px 5px black;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.linkedin {
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  text-align: right;
+  margin-right: 20px;
+}
+
+#linkedin-icon {
+  height: 30px;
 }
 
 #copyright {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  text-align: center;
   width: 100%;
   color: #ffffff;
-  position: relative;
-  margin-top: 28px;
-  text-align: center;
   font-size: 0.8em;
 }
 /*# sourceMappingURL=style.css.map */

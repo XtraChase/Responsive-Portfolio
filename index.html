@@ -11,54 +11,70 @@
     <link rel="stylesheet" href="styles/style.css" type="text/css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <div id="title"><h1>Chase</h1></div>
-        <div class="navigate">
-          <ul class="nav-links">
-            <li><a href="index.html">ABOUT</a></li>
-            <li><a href="portfolio.html">PORTFOLIO</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-          </ul>
-        </div>
-        <div class="burger">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-        </div>
-      </nav>
-    </header>
-    <section class="main">
-      <div class="body-content">
-        <div>
-          <h1 id="about-title">About Me</h1>
-          <div id="line"></div>
-          <img
-            id="profile-photo"
-            src="images/Chase_Richards_Profile_Photo.jpg"
-            alt="Chase Richards Profile Photo"
-          />
-          <p id="about">
-            I'm experienced business development professional and entrepreneur
-            with a demonstrated history of working in the media production
-            industry. Skilled in sales, team management Adobe Creative Suite,
-            photo and videography, aerial drone use, Pix4D, Blender, and Unity.
-            Graduated from Beacon College with a degree in business management.
-            Currently attending Georgia Tech Coding Bootcamp and working to
-            deploy a virtual reality program for medical care.
+    <div class="page-container">
+      <div id="content-wrap">
+        <header>
+          <nav>
+            <div id="title"><h1>Chase</h1></div>
+            <div class="navigate">
+              <ul class="nav-links">
+                <li><a href="index.html">ABOUT</a></li>
+                <li><a href="portfolio.html">PORTFOLIO</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+              </ul>
+            </div>
+            <div class="burger">
+              <div class="line1"></div>
+              <div class="line2"></div>
+              <div class="line3"></div>
+            </div>
+          </nav>
+        </header>
+        <section class="main">
+          <div class="body-content">
+            <div>
+              <h1 id="about-title">About Me</h1>
+              <div id="line"></div>
+              <img
+                id="profile-photo"
+                src="images/Chase_Richards_Profile_Photo.jpg"
+                alt="Chase Richards Profile Photo"
+              />
+              <p id="about">
+                Experienced business development professional and entrepreneur
+                with a demonstrated history of working in the media production
+                industry. Skilled in sales, team management, Adobe for photo and
+                videography, UAS 3D scanning, Blender, and Unity. Graduated from
+                Beacon College with a degree in business management. Currently
+                learning full-stack web development at Georgia Tech and working
+                to deploy a virtual reality program for medical care.
+              </p>
+            </div>
+          </div>
+        </section>
+        <footer>
+          <p id="copyright">
+            Copyright &copy;
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            Chase Richards
           </p>
-        </div>
+          <div class="linkedin">
+            <a
+              href="https://www.linkedin.com/in/james-chase-richards/"
+              target="_blank"
+            >
+              <img
+                id="linkedin-icon"
+                src="images/linkedin.png"
+                alt="linkedin"
+              />
+            </a>
+          </div>
+        </footer>
       </div>
-    </section>
-    <footer>
-      <p id="copyright">
-        Copyright &copy;
-        <script>
-          document.write(new Date().getFullYear());
-        </script>
-        Chase Richards
-      </p>
-    </footer>
+    </div>
     <script src="script/script.js"></script>
   </body>
 </html>
