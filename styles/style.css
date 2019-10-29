@@ -403,7 +403,17 @@ body {
 
 @media screen and (max-width: 420px) {
   .image6-text {
-    margin: 365% 0% 0% 5%;
+    margin: 440% 0% 0% 5%;
+  }
+}
+
+.image7-text {
+  margin: 142% 0% 0% 2.5%;
+}
+
+@media screen and (max-width: 420px) {
+  .image7-text {
+    margin: 515% 0% 0% 5%;
   }
 }
 
