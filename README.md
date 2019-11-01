@@ -1,6 +1,6 @@
 # Responsive-Portfolio
 
-My class portfolio with all of my projects.
+My class portfolio with some of my projects.
 
 ## What I learned
 * Responsive layout
