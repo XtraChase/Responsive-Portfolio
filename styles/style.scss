@@ -312,6 +312,13 @@ body {
   }
 }
 
+.image8-text {
+  margin: 142% 0% 0% 52.5%;
+  @media screen and (max-width: 420px) {
+    margin: 515% 0% 0% 5%;
+  }
+}
+
 #line {
   width: 95%;
   margin-left: 2.5%;
