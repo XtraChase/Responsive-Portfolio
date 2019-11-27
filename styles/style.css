@@ -423,7 +423,17 @@ body {
 
 @media screen and (max-width: 420px) {
   .image8-text {
-    margin: 515% 0% 0% 5%;
+    margin: 595% 0% 0% 5%;
+  }
+}
+
+.image9-text {
+  margin: 182% 0% 0% 2.5%;
+}
+
+@media screen and (max-width: 420px) {
+  .image9-text {
+    margin: 660% 0% 0% 5%;
   }
 }
 
