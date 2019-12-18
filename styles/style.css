@@ -41,7 +41,7 @@ nav {
 
 body {
   font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
-  background-image: url("images/papyrus.png");
+  background-image: url(images/papyrus.png);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -432,6 +432,16 @@ body {
   }
 }
 
+.image10-text {
+  margin: 180% 0% 0% 52.5%;
+}
+
+@media screen and (max-width: 420px) {
+  .image10-text {
+    margin: 660% 0% 0% 5%;
+  }
+}
+
 #line {
   width: 95%;
   margin-left: 2.5%;
@@ -526,7 +536,6 @@ footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 3rem;
   background-color: #666666;
   border-style: solid;
   border-width: 5px 0px 0px 0px;
@@ -537,31 +546,49 @@ footer {
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (3rem)[1];
+      grid-template-rows: repeat(1, 3rem);
+      grid-template-areas: "a b c";
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+}
+
+.footer-a {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: a;
+  color: transparent;
+  font-size: 0.1em;
 }
 
 .linkedin {
-  -ms-grid-column: 3;
-      grid-column-start: 3;
   text-align: right;
   margin-right: 20px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: c;
 }
 
-#linkedin-icon {
+.github-icon {
+  text-align: right;
+  margin-right: 60px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: c;
+}
+
+#linkedin-icon,
+#github-icon {
   height: 30px;
 }
 
 #copyright {
-  -ms-grid-column: 2;
-      grid-column-start: 2;
   text-align: center;
-  width: 100%;
   color: #ffffff;
   font-size: 0.8em;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: b;
 }
 /*# sourceMappingURL=style.css.map */
