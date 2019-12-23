@@ -41,19 +41,34 @@
                 alt="Chase Richards Profile Photo"
               />
               <p id="about">
-                Full Stack Web Developer with a background in media production
+                Full-stack web developer with a background in media production
                 and business startups. Innovator and problem-solver with a
                 passion for developing apps. With each project, my aim is to
                 fully emerge the user for an impactful user experience.
                 Graduated from Beacon College with a degree in business
-                management and recently received a certificate for Full Stack
-                web development from the Georgia Institute of Technology.
-                Currently working on the side to deploy a virtual reality
-                program for medical care.
+                management and recently received a certificate for web
+                development from the Georgia Institute of Technology. Currently
+                working on the side to deploy a virtual reality program for
+                medical care.
               </p>
             </div>
           </div>
         </section>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close"></span>
+            <p id="modal-content">
+              There is a newer version of this portfolio available
+            </p>
+            <button id="modal-btn">
+              <a href="https://xtrachase.github.io/portfolio2/">View Now</a>
+            </button>
+          </div>
+        </div>
+
         <footer>
           <p id="copyright">
             Copyright &copy;
@@ -74,9 +89,27 @@
               />
             </a>
           </div>
+
+          <div class="github-icon">
+            <a href="https://github.com/XtraChase" target="_blank">
+              <img
+                id="github-icon"
+                src="images/GitHub-Mark-Light-64px.png"
+                alt="github"
+              />
+            </a>
+          </div>
         </footer>
       </div>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="script/script.js"></script>
+    <script src="script/modal.js"></script>
+    <script>
+      $(document).ready(function() {
+        modal.style.display = "block";
+      });
+    </script>
   </body>
 </html>

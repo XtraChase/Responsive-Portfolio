@@ -213,6 +213,78 @@ body {
   box-shadow: 1px 2px 9px rgba(0, 0, 0, 0.836);
 }
 
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+  text-align: center;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#modal-content {
+  font-size: 1.5em;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+#modal-btn {
+  margin-top: 10px;
+  font-size: 1.5em;
+  background-color: rgb(56, 118, 166);
+  color: white;
+  padding: 6px 12px 6px 12px;
+  border-radius: 12px;
+  border-style: none;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+#modal-btn:hover {
+  transform: translateY(-1.5px);
+  -webkit-filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.4));
+  filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.2));
+}
+
+#modal-btn:active {
+  transform: translateY(-0.2px);
+  -webkit-filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.4));
+  filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.2));
+}
+
 #about-title {
   color: rgb(64, 113, 148);
   padding: 15px 0px 5px 30px;
